@@ -1,0 +1,27 @@
+/* Add your customizations of theme here */
+body {
+    .ui-slidemenu .ui-slidemenu-backward:hover {
+        background: #cfd7df;
+    }
+    .ui-steps .ui-steps-item {
+        background: white;
+        .ui-menuitem-link .ui-steps-number{
+            @include border-radius(2%);
+        }
+    }
+
+    .ui-fluid{
+        .ui-spinner	{
+            .ui-spinner-button{
+                border: none;
+            }
+        }
+        
+        // .ui-calendar-w-btn {
+        //     border: 1px solid #c8c8c8;
+        //     &:hover{
+        //         border: 1px solid red;
+        //     }
+        // }
+    }
+} 

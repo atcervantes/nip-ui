@@ -1,0 +1,85 @@
+body {
+    .ui-menu{
+        .ui-submenu-header {
+
+            background: $subMenuHeader;
+        
+        }
+    }
+    
+    .ui-megamenu {
+        padding: $menuPadding;
+        background-color: $menuBgColor;
+        border: $menuBorder;
+
+        .ui-megamenu-submenu-header {
+            background: $subMenuHeader;
+        }
+    }
+
+    .ui-tabmenu {
+        border: 0 none;
+
+        .ui-tabmenu-nav {
+            padding: 0;
+            background: $tabsNavBgColor;
+            border-bottom: 0 none;
+           
+            .ui-tabmenuitem {
+                position: static;
+                border: 0 none;
+                background-color: $panelHeaderBgColor;
+                margin-right: $tabHeaderSpacing;
+                margin-bottom: -1px;
+                @include transition($panelHeaderTransition);
+
+                .ui-menuitem-link {
+                    color: $panelHeaderTextColor;
+                    padding: $panelHeaderPadding;
+
+                    .ui-menuitem-text {
+                        color: $panelHeaderTextColor;
+                        margin-right: $inlineSpacing;
+                    }
+
+                    .ui-menuitem-icon {
+                        color: $panelHeaderIconColor;
+                        margin-right: $inlineSpacing;
+                    }
+                }
+
+                &:not(.ui-state-active):not(.ui-state-disabled):hover {
+                    background-color: $white;
+                    border: 0 none;
+                    border-bottom: 2px solid $primaryColor;
+
+                    .ui-menuitem-link {
+                        .ui-menuitem-text {
+                            color: $panelHeaderHoverTextColor;
+                        }
+
+                        .ui-menuitem-icon {
+                            color: $panelHeaderIconHoverColor;
+                        }
+                    }
+                }
+
+                &.ui-state-active {
+                    background-color: $white;
+                    border: 0 none;
+                    border-bottom: 2px solid $primaryColor;
+
+                    .ui-menuitem-link {
+                        .ui-menuitem-text {
+                            color: $panelHeaderActiveTextColor;
+                        }
+
+                        .ui-menuitem-icon {
+                            color: $panelHeaderActiveIconColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

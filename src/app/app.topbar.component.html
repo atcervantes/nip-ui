@@ -1,0 +1,13 @@
+<div class="layout-topbar">
+  <div class="layout-topbar-content">
+      <img src="assets/layout/images/logo.png" class="topbar-logo">
+    <a href="#" id="menu-btn" class="menu-btn" (click)="app.onMobileMenuButton($event)">
+      <i class="pi pi-bars"></i>
+    </a>
+
+
+    <p-inputSwitch [(ngModel)]="checked" class="topbar-link" (onChange)="handleChange($event)"></p-inputSwitch>
+
+    <!-- <a [routerLink]="['/documentation']" class="topbar-link" (click)="app.hideMobileMenu($event)">Get Started</a> -->
+  </div>
+</div>

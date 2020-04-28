@@ -1,0 +1,70 @@
+<p-messages severity="info">
+  asdfasfdasdf
+  <span class="custom-message">I am the one who knocks.</span>
+</p-messages>
+
+<div class="p-grid">
+
+  <div class="p-col-3" >
+    <p-card subheader="Unread Messages">
+      <h2><i class="fa fa-inbox" style="color:#3984b8"></i>150</h2>
+      <div style="color:#3fb839">
+        +50%
+      </div>
+     </p-card>
+  </div>
+
+  <div class="p-col-3" >
+    <p-card subheader="Check-Ins">
+      <h2><i class="fa fa-map-pin" style="color:#7e8dcd"></i>532</h2>
+      <div style="color:#3fb839">
+        +75%
+      </div>
+     </p-card>
+  </div>
+
+  <div class="p-col-3" >
+    <p-card subheader="Files Synced">
+      <h2><i class="fa fa-folder" style="color:#39b8b6"></i>25</h2>
+      <div style="color:#3fb839">
+        +50%
+      </div>
+     </p-card>
+  </div>
+
+  <div class="p-col-3" >
+    <p-card subheader="User Online">
+      <h2><i class="fa fa-user" style="color:#f6ac2b"></i>156</h2>
+      <div style="color:#e17576">
+        -10%
+      </div>
+     </p-card>
+  </div>
+</div>
+
+<!-- Begins second section -->
+<div class="p-grid">
+  <div class="p-col-6 p-md-6">
+    <p-panel styleClass="transparent" header="STATISTICS">
+      <p-chart type="pie" [data]="pieData"></p-chart>
+    </p-panel>
+  </div>
+  <div class="p-col-6 p-md-6">
+      <p-panel header="Sales Graph" styleClass="transparent">
+        <p-chart type="line" [data]="lineData"></p-chart>
+      </p-panel>
+    </div>
+</div>
+<!-- Begins third section -->
+<!-- <div class="p-grid">
+  <div class="p-col-8">
+    <p-card>
+      
+    </p-card> 
+  </div>
+  <div class="p-col-4">
+      <p-card header="Header">
+        2
+      </p-card>
+    </div>
+</div> -->
