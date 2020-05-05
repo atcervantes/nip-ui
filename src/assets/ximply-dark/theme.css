@@ -229,7 +229,7 @@ body.layout-scroll-block {
 
 .card {
   border-radius: 3px;
-  background: rgba(68, 70, 79, 0.5);
+  background: #44464f;
   padding: 16px;
   margin-bottom: 16px;
 }
@@ -1004,7 +1004,7 @@ body .ui-listbox .ui-listbox-footer {
 }
 body .ui-editor-container .ui-editor-toolbar {
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
 }
 body .ui-editor-container .ui-editor-content {
   border: none;
@@ -1319,7 +1319,7 @@ body .ui-fluid .ui-calendar.ui-calendar-w-btn input.ui-inputtext {
   width: calc(100% - 2.357em);
 }
 body .ui-fileupload .ui-fileupload-buttonbar {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   padding: 0.571em 1em;
   border: none;
   color: #949ba2;
@@ -1329,7 +1329,7 @@ body .ui-fileupload .ui-fileupload-buttonbar .ui-button {
   margin-right: 8px;
 }
 body .ui-fileupload .ui-fileupload-content {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   padding: 0.571em 1em;
   border: none;
   color: #ffffff;
@@ -1421,6 +1421,7 @@ body .ui-inputgroup .ui-button:last-child {
 }
 body .ui-fluid .ui-inputgroup .ui-button {
   width: auto;
+  padding: 0.108em;
 }
 body .ui-fluid .ui-inputgroup .ui-button.ui-button-icon-only {
   width: 2.357em;
@@ -1758,7 +1759,7 @@ body .ui-panel {
 body .ui-panel .ui-panel-titlebar {
   border: none;
   padding: 0.571em 1em;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #949ba2;
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -1794,7 +1795,7 @@ body .ui-panel .ui-panel-titlebar .ui-panel-titlebar-icon:hover {
 body .ui-panel .ui-panel-content {
   padding: 0.571em 1em;
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   padding: 0.571em 1em;
   border-top: 0 none;
@@ -1802,21 +1803,21 @@ body .ui-panel .ui-panel-content {
 body .ui-panel .ui-panel-footer {
   padding: 0.571em 1em;
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   border-top: 0 none;
   margin: 0;
 }
 body .ui-fieldset {
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
 }
 body .ui-fieldset .ui-fieldset-legend a {
   padding: 0.571em 1em;
   border: none;
   color: #949ba2;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -1853,7 +1854,7 @@ body .ui-accordion .ui-accordion-header a {
   padding: 0.571em 1em;
   border: none;
   color: #949ba2;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #949ba2;
   font-weight: 700;
   -moz-transition: background-color 0.2s;
@@ -1891,7 +1892,7 @@ body .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active:
 body .ui-accordion .ui-accordion-content {
   padding: 0.571em 1em;
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   padding: 0.571em 1em;
 }
@@ -1905,11 +1906,36 @@ body .ui-tabview.ui-tabview-top .ui-tabview-nav, body .ui-tabview.ui-tabview-bot
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li, body .ui-tabview.ui-tabview-left .ui-tabview-nav li, body .ui-tabview.ui-tabview-right .ui-tabview-nav li {
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   -moz-transition: background-color 0.2s;
   -o-transition: background-color 0.2s;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.flat, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.flat, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.flat, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.flat {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.flat:not(.ui-state-active):not(.ui-state-disabled):hover, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.flat:not(.ui-state-active):not(.ui-state-disabled):hover, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.flat:not(.ui-state-active):not(.ui-state-disabled):hover, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.flat:not(.ui-state-active):not(.ui-state-disabled):hover {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #f6a821;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.flat.ui-state-active, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.flat.ui-state-active, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.flat.ui-state-active, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.flat.ui-state-active {
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 2px solid #f6a821;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.flat.ui-state-active a, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.flat.ui-state-active a, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.flat.ui-state-active a, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.flat.ui-state-active a {
+  color: #ffffff;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.flat.ui-state-active .ui-tabview-close, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.flat.ui-state-active .ui-tabview-close, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.flat.ui-state-active .ui-tabview-close, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.flat.ui-state-active .ui-tabview-close {
+  color: #ffffff;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.flat.ui-state-active:hover, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.flat.ui-state-active:hover, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.flat.ui-state-active:hover, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.flat.ui-state-active:hover {
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 2px solid #f6a821;
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li a, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li a, body .ui-tabview.ui-tabview-left .ui-tabview-nav li a, body .ui-tabview.ui-tabview-right .ui-tabview-nav li a {
   float: none;
@@ -1987,7 +2013,7 @@ body .ui-tabview.ui-tabview-right .ui-tabview-nav li {
   margin-bottom: 2px;
 }
 body .ui-tabview .ui-tabview-panels {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   padding: 0.571em 1em;
   border: none;
   color: #ffffff;
@@ -1996,7 +2022,7 @@ body .ui-tabview .ui-tabview-panels .ui-tabview-panel {
   padding: 0;
 }
 body .ui-toolbar {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   border: none;
   padding: 0.571em 1em;
 }
@@ -2009,7 +2035,7 @@ body .ui-toolbar .ui-toolbar-separator {
   margin: 0 0.5em;
 }
 body .ui-card {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -2101,6 +2127,7 @@ body .ui-paginator .ui-paginator-pages .ui-paginator-page {
 body .ui-paginator .ui-paginator-pages .ui-paginator-page.ui-state-active {
   background-color: #f6a821;
   color: #ffffff;
+  border: 1px solid none;
 }
 body .ui-paginator .ui-paginator-pages .ui-paginator-page:not(.ui-state-active):hover {
   background-color: #DB8E09;
@@ -2113,7 +2140,7 @@ body .ui-paginator .ui-dropdown {
 }
 body .ui-table .ui-table-caption,
 body .ui-table .ui-table-summary {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #949ba2;
   border: none;
   padding: 0.571em 1em;
@@ -2232,7 +2259,7 @@ body .ui-table .ui-column-resizer-helper {
   }
 }
 body .ui-datagrid .ui-datagrid-header {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #949ba2;
   border: none;
   padding: 0.571em 1em;
@@ -2242,19 +2269,19 @@ body .ui-datagrid .ui-datagrid-header {
 body .ui-datagrid .ui-datagrid-content {
   padding: 0.571em 1em;
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   padding: 0.571em 1em;
 }
 body .ui-datagrid .ui-datagrid-footer {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   border: none;
   padding: 0.571em 1em;
   border-top: 0 none;
 }
 body .ui-datalist .ui-datalist-header {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #949ba2;
   border: none;
   padding: 0.571em 1em;
@@ -2264,19 +2291,19 @@ body .ui-datalist .ui-datalist-header {
 body .ui-datalist .ui-datalist-content {
   padding: 0.571em 1em;
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   padding: 0.571em 1em;
 }
 body .ui-datalist .ui-datalist-footer {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   border: none;
   padding: 0.571em 1em;
   border-top: 0 none;
 }
 body .ui-datascroller .ui-datascroller-header {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #949ba2;
   border: none;
   padding: 0.571em 1em;
@@ -2286,19 +2313,19 @@ body .ui-datascroller .ui-datascroller-header {
 body .ui-datascroller .ui-datascroller-content {
   padding: 0.571em 1em;
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   padding: 0.571em 1em;
 }
 body .ui-datascroller .ui-datascroller-footer {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   border: none;
   padding: 0.571em 1em;
   border-top: 0 none;
 }
 body .ui-virtualscroller .ui-virtualscroller-header {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #949ba2;
   border: none;
   padding: 0.571em 1em;
@@ -2307,21 +2334,21 @@ body .ui-virtualscroller .ui-virtualscroller-header {
 }
 body .ui-virtualscroller .ui-virtualscroller-content {
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
 }
 body .ui-virtualscroller .ui-virtualscroller-content .ui-virtualscroller-list li {
   border-bottom: none;
 }
 body .ui-virtualscroller .ui-virtualscroller-footer {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   border: none;
   padding: 0.571em 1em;
   border-top: 0 none;
 }
 body .ui-dataview .ui-dataview-header {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #949ba2;
   border: none;
   padding: 0.571em 1em;
@@ -2331,25 +2358,25 @@ body .ui-dataview .ui-dataview-header {
 body .ui-dataview .ui-dataview-content {
   padding: 0.571em 1em;
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   padding: 0.571em 1em;
 }
 body .ui-dataview .ui-dataview-footer {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   border: none;
   padding: 0.571em 1em;
   border-top: 0 none;
 }
 body .fc th {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   border: none;
   color: #949ba2;
   padding: 0.571em 1em;
 }
 body .fc td.ui-widget-content {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   border: none;
   color: #ffffff;
 }
@@ -2425,7 +2452,7 @@ body .fc .fc-toolbar .fc-button-group .fc-button:last-child {
   border-bottom-right-radius: 3px;
 }
 body .fc .fc-divider {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   border: none;
 }
 body .ui-fluid .fc .fc-toolbar .fc-button {
@@ -2435,7 +2462,7 @@ body .ui-picklist .ui-picklist-buttons button {
   font-size: 16px;
 }
 body .ui-picklist .ui-picklist-caption {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #949ba2;
   border: none;
   padding: 0.571em 1em;
@@ -2473,7 +2500,7 @@ body .ui-picklist .ui-picklist-buttons {
 }
 body .ui-picklist .ui-picklist-list {
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   padding: 0;
 }
@@ -2507,7 +2534,7 @@ body .ui-orderlist .ui-orderlist-controls button {
   font-size: 16px;
 }
 body .ui-orderlist .ui-orderlist-caption {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #949ba2;
   border: none;
   padding: 0.571em 1em;
@@ -2542,7 +2569,7 @@ body .ui-orderlist .ui-orderlist-filter-container .ui-orderlist-filter-icon {
 }
 body .ui-orderlist .ui-orderlist-list {
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   padding: 0;
 }
@@ -2566,7 +2593,7 @@ body .ui-orderlist .ui-orderlist-list .ui-orderlist-droppoint-highlight {
 }
 body .ui-tree {
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   padding: 0.571em 1em;
 }
@@ -2630,7 +2657,7 @@ body .ui-tree.ui-tree-horizontal {
 }
 body .ui-tree.ui-tree-horizontal .ui-treenode .ui-treenode-content {
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   padding: 0.571em 1em;
 }
@@ -2684,7 +2711,7 @@ body .ui-organizationchart .ui-organizationchart-line-top {
 }
 body .ui-organizationchart .ui-organizationchart-node-content {
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   padding: 0.571em 1em;
 }
@@ -2695,7 +2722,7 @@ body .ui-organizationchart .ui-organizationchart-node-content .ui-node-toggler {
 }
 body .ui-treetable .ui-treetable-caption,
 body .ui-treetable .ui-treetable-summary {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #949ba2;
   border: none;
   padding: 0.571em 1em;
@@ -3027,10 +3054,10 @@ body .ui-widget-overlay {
   background-color: rgba(0, 0, 0, 0.4);
 }
 body .ui-overlaypanel {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   padding: 0;
-  border: 1px solid transparent;
+  border: 1px solid #44464f;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
@@ -3062,17 +3089,17 @@ body .ui-overlaypanel .ui-overlaypanel-close .ui-overlaypanel-close-icon {
 }
 body .ui-overlaypanel:after {
   border-color: rgba(68, 70, 79, 0);
-  border-bottom-color: rgba(68, 70, 79, 0.5);
+  border-bottom-color: #44464f;
 }
 body .ui-overlaypanel:before {
-  border-color: rgba(0, 0, 0, 0);
-  border-bottom-color: transparent;
+  border-color: rgba(68, 70, 79, 0);
+  border-bottom-color: #44464f;
 }
 body .ui-overlaypanel.ui-overlaypanel-flipped:after {
-  border-top-color: rgba(68, 70, 79, 0.5);
+  border-top-color: #44464f;
 }
 body .ui-overlaypanel.ui-overlaypanel-flipped:before {
-  border-top-color: transparent;
+  border-top-color: #44464f;
 }
 body .ui-dialog {
   padding: 0;
@@ -3083,7 +3110,7 @@ body .ui-dialog {
 }
 body .ui-dialog .ui-dialog-titlebar {
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #949ba2;
   padding: 1em;
   font-weight: 700;
@@ -3107,14 +3134,14 @@ body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon:hover {
   color: #fff;
 }
 body .ui-dialog .ui-dialog-content {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
-  border: 1px solid transparent;
+  border: 1px solid #44464f;
   padding: 0.571em 1em;
 }
 body .ui-dialog .ui-dialog-footer {
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   padding: 0.571em 1em;
   margin: 0;
@@ -3141,10 +3168,10 @@ body .ui-dialog.ui-confirm-dialog .ui-dialog-content > span.ui-icon {
   font-size: 16px;
 }
 body .ui-sidebar {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   padding: 0.571em 1em;
-  border: 1px solid transparent;
+  border: 1px solid #44464f;
   -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
@@ -3182,7 +3209,7 @@ body .ui-lightbox {
 }
 body .ui-lightbox .ui-lightbox-caption {
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #949ba2;
   padding: 0.571em 1em;
   font-weight: 700;
@@ -3204,7 +3231,7 @@ body .ui-lightbox .ui-lightbox-caption .ui-lightbox-close:hover {
 }
 body .ui-lightbox .ui-lightbox-content-wrapper {
   overflow: hidden;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   border: 0 none;
   padding: 0;
@@ -3233,7 +3260,7 @@ body .ui-lightbox .ui-lightbox-content-wrapper .ui-lightbox-content.ui-lightbox-
 }
 
 body .ui-breadcrumb {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   border: none;
   padding: 0.571em 1em;
 }
@@ -3379,7 +3406,7 @@ body .ui-menu .ui-submenu-header {
   margin: 0;
   padding: 0.714em 0.857em;
   color: #949ba2;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   font-weight: 700;
   border: 0 none;
 }
@@ -3522,7 +3549,7 @@ body .ui-slidemenu .ui-slidemenu-backward {
   margin: 0;
   padding: 0.571em 1em;
   color: #949ba2;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   font-weight: 700;
   border: 0 none;
 }
@@ -3545,7 +3572,7 @@ body .ui-tabmenu .ui-tabmenu-nav {
 body .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem {
   position: static;
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   margin-right: 2px;
   margin-bottom: -1px;
   -moz-transition: background-color 0.2s;
@@ -3594,7 +3621,7 @@ body .ui-megamenu .ui-megamenu-submenu-header {
   margin: 0;
   padding: 0.571em 1em;
   color: #949ba2;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   font-weight: 700;
   border: 0 none;
 }
@@ -3632,7 +3659,7 @@ body .ui-panelmenu .ui-panelmenu-header {
 }
 body .ui-panelmenu .ui-panelmenu-header > a {
   border: none;
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #949ba2;
   padding: 0.714em 0.857em;
   font-weight: 700;
@@ -3742,7 +3769,7 @@ body .ui-galleria .ui-galleria-nav-next {
   font-size: 16px;
 }
 body .ui-terminal {
-  background-color: rgba(68, 70, 79, 0.5);
+  background-color: #44464f;
   color: #ffffff;
   border: none;
   padding: 0.571em 1em;

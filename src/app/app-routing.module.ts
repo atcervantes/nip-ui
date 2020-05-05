@@ -10,7 +10,7 @@ import { MenusDemoComponent } from './demo/view/menusdemo.component';
 import { ChartsDemoComponent } from './demo/view/chartsdemo.component';
 import { FileDemoComponent } from './demo/view/filedemo.component';
 import { MessagesDemoComponent } from './demo/view/messagesdemo.component';
-// import { MiscDemoComponent } from './demo/view/miscdemo.component';
+import { SettingsComponent } from './demo/view/settings/settings.component';
 
 const routes: Routes = [
 
@@ -23,6 +23,7 @@ const routes: Routes = [
   { path: 'menus', component: MenusDemoComponent },
   { path: 'messages', component: MessagesDemoComponent },
   { path: 'charts', component: ChartsDemoComponent },
+  { path: 'settings', component: SettingsComponent },
   { path: 'file', component: FileDemoComponent }
 
 ];

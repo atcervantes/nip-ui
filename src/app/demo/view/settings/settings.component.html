@@ -1,0 +1,114 @@
+<div class="p-grid ui-fluid">
+    <div class="p-col-12">
+        <p-card header="Settings" >
+            <hr/>
+            <div class="p-grid">
+                <div class="p-col-2" >
+                    <h4>
+                        Account
+                    </h4>
+                </div>
+                <div class="p-col-10" >
+                    <div class="p-grid" >
+                        <div class="p-col-4" >
+                            <span>First Name</span>
+                            <input id="first-name" type="text" pInputText>
+                        </div>
+                        <div class="p-col-4" >
+                            <span>Last Name</span>
+                            <input id="last-name" type="text" pInputText>
+                        </div>
+                        <div class="p-col-8" >
+                            <span>Email Address</span>
+                            <input id="address" type="text" pInputText>
+                        </div>
+                        <div class="p-col-4" ></div>
+                        <div class="p-col-4" >
+                            <span>Phone Number</span>
+                            <input id="phone" type="text" pInputText>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+            <div class="p-grid">
+                <div class="p-col-2" >
+                    <h4>
+                        Billing
+                    </h4>
+                </div>
+                <div class="p-col-10">
+                    <div class="p-grid" >
+                        <div class="p-col-4" >
+                            <span>Plan</span>
+                            <input id="billing-plan" type="text" pInputText>
+                        </div>
+                        <div class="p-col-4" >
+                            <span>Billing Interval</span>
+                            <p-dropdown id="billing-interval" ></p-dropdown>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <hr/>
+            <div class="p-grid ">
+                <div class="p-col-2" >
+                    <h4>
+                        Bussines Address
+                    </h4>
+                </div>
+                <div class="p-col-10" >
+                    <div class="p-grid" >
+                        <div class="p-col-8" >
+                            <span>Street Address</span>
+                            <input id="address" type="text" pInputText>
+                        </div>
+                        <div class="p-col-4" ></div>
+                        <div class="p-col-4" >
+                            <span>City</span>
+                            <input id="city" type="text" pInputText>
+                        </div>
+                        <div class="p-col-4" >
+                            <span>State / Province</span>
+                            <p-dropdown id="billing-interval" ></p-dropdown>
+                        </div>
+                        <div class="p-col-4" ></div>
+                        <div class="p-col-4" >
+                            <span>ZIP / Postal Code</span>
+                            <input id="zip" type="text" pInputText>
+                        </div>
+                        <div class="p-col-4" >
+                            <span>Country</span>
+                            <p-autoComplete id="acSimple" [(ngModel)]="country" [suggestions]="filteredCountries" (completeMethod)="filterCountry($event)" field="name" [size]="30"
+                            placeholder="Autocomplete" [minLength]="1"></p-autoComplete>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <p-footer>
+                <div class="p-grid">
+                    <div class="p-col-2">
+                    </div>
+                    <div class="p-col-10" >
+                        <div class="p-grid" >
+                            <div class="p-col-4 p-offset-4">
+                                <div class="p-grid">
+                                    <div class="p-col-6">
+                                        <button pButton type="button" label="Cancel"></button>
+                                    </div>
+                                    <div class="p-col-6">
+                                        <button pButton type="button" label="Save" class="ui-button-secondary"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </p-footer>
+        </p-card> 
+    </div>
+</div>

@@ -21,6 +21,7 @@ import { MenusDemoComponent } from './demo/view/menusdemo.component';
 import { MessagesDemoComponent } from './demo/view/messagesdemo.component';
 import { ChartsDemoComponent } from './demo/view/chartsdemo.component';
 import { FileDemoComponent } from './demo/view/filedemo.component';
+
 // import { MiscDemoComponent } from './demo/view/miscdemo.component';
 
 import { AccordionModule } from 'primeng/accordion';
@@ -93,6 +94,7 @@ import { CarService } from './demo/service/carservice';
 import { CountryService } from './demo/service/countryservice';
 import { EventService } from './demo/service/eventservice';
 import { NodeService } from './demo/service/nodeservice';
+import { SettingsComponent } from './demo/view/settings/settings.component';
 
 @NgModule({
     declarations: [
@@ -109,7 +111,8 @@ import { NodeService } from './demo/service/nodeservice';
         MenusDemoComponent,
         MessagesDemoComponent,
         ChartsDemoComponent,
-        FileDemoComponent
+        FileDemoComponent,
+        SettingsComponent
         // MiscDemoComponent
     ],
     imports: [

@@ -12,6 +12,8 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
+$defaultBorderColor: #c8c8c8;
+
 $accent:    #dee4e9;
 $accentDark:  #849aad;
 $success:     #39b86d;
@@ -34,20 +36,20 @@ $navColor:  #2a2d35;
 $primaryColor:#63aee2;
 $primaryDarkColor:#3975b8;
 $primaryDarkerColor:#1c425b;
-$primaryTextColor:#5e6468;
+$primaryTextColor:#333;
 
 
 //Global
 $fontFamily:"Roboto",sans-serif;
 $fontSize:14px;
-$textColor:#494b54;
-$textSecondaryColor:#494b54;
+$textColor:#333;
+$textSecondaryColor:#333;
 $borderRadius:2px;
 $transitionDuration:.2s;
 $primeIconFontSize:1.25em;
 
 $bodyBgColor:#d6e7f2;
-$topbarBgColor:#224f6c;//#3984b8;
+$topbarBgColor:#224f6c;
 $sidebarBgColor:#ffffff;
 $sidebarMenuBgColor:#ffffff;
 $sidebarMenuItemHover:#F6F9FB;
@@ -61,8 +63,8 @@ $linkHoverColor:$primaryDarkColor;
 $linkActiveColor:$primaryDarkerColor;
 
 //highlight
-$highlightBgColor:$primaryColor;
-$highlightColorText:$white;
+$highlightBgColor:rgba(99, 174, 226, 0.1);
+$highlightColorText:#333;
 
 //input field (e.g. inputtext, spinner, inputmask)
 $inputPadding:0.429em;
@@ -130,8 +132,8 @@ $buttonWithRightIconPadding:0.429em 2em 0.429em 1em;
 $buttonIconOnlyPadding:0.429em;
 $buttonIconOnlyWidth:2.357em;
 $buttonBgColor:$transparent;
-$buttonBorder:1px solid $primaryColor;
-$buttonTextColor:$primaryColor;
+$buttonBorder:1px solid #c8c8c8;
+$buttonTextColor:#333;
 
 $buttonHoverBgColor:rgba(99, 174, 226, 0.1);
 $buttonHoverTextColor:$primaryColor;
@@ -149,15 +151,15 @@ $raisedButtonShadow:0 2px 3px 0 rgba(0, 0, 0, 0.15);
 $roundedButtonBorderRadius:50px;
 
 $secondaryButtonBgColor:$transparent;
-$secondaryButtonBorder:1px solid $complementaryColor;
-$secondaryButtonTextColor:$complementaryColor;
-$secondaryButtonHoverBgColor:rgba(226, 144, 99, 0.1);
-$secondaryButtonHoverTextColor:$complementaryColor;
-$secondaryButtonHoverBorderColor:$complementaryColor;
-$secondaryButtonActiveBgColor:rgba(226, 144, 99, 0.1);
-$secondaryButtonActiveTextColor:$complementaryColor;
-$secondaryButtonActiveBorderColor:$complementaryColor;
-$secondaryButtonFocusShadow:0 0 0 0.2em lighten($secondaryButtonBgColor, 35%);
+$secondaryButtonBorder:1px solid $primaryColor;
+$secondaryButtonTextColor:$primaryColor;
+$secondaryButtonHoverBgColor:rgba(99, 174, 226, 0.1);
+$secondaryButtonHoverTextColor:$primaryColor;
+$secondaryButtonHoverBorderColor:$primaryColor;
+$secondaryButtonActiveBgColor:rgba(99, 174, 226, 0.1);
+$secondaryButtonActiveTextColor:$primaryColor;
+$secondaryButtonActiveBorderColor:$primaryColor;
+$secondaryButtonFocusShadow:0 0 0 0.2em lighten($primaryColor, 35%);
 
 $infoButtonBgColor:$transparent;
 $infoButtonBorder:1px solid $info;
@@ -258,37 +260,36 @@ $radiobuttonFocusShadow:0 0 0 0.2em lighten($primaryDarkerColor, 35%);
 $radiobuttonTransition:background-color $transitionDuration, border-color $transitionDuration, box-shadow $transitionDuration;
 
 //togglebutton
-$toggleButtonBgColor:#b8bec3;
-$toggleButtonActiveHoverBgColor:$primaryColor;
-$toggleButtonFocusBgColor:#b8bec3;
-$toggleButtonActiveFocusBgColor:$primaryColor;
+$toggleButtonBgColor:transparent;
+$toggleButtonBorder:1px solid #c8c8c8;
+$toggleButtonFocusBgColor:$transparent;
+$toggleButtonTextColor:#333333;
+$toggleButtonIconColor:#333333;
+$toggleButtonHoverBgColor:$transparent;
+$toggleButtonHoverBorderColor:1px solid #c8c8c8;
+$toggleButtonHoverTextColor:#333333;
+$toggleButtonHoverIconColor:#333333;
+$toggleButtonFocusBorderColor:1px solid #c8c8c8;
+$toggleButtonFocusTextColor:#333333;
+$toggleButtonFocusIconColor:#333333;
 
-$toggleButtonHoverBgColor:#b8bec3;
-$toggleButtonHoverBorderColor:$gray-800;
-$toggleButtonHoverTextColor:#292929;
-$toggleButtonHoverIconColor:#292929;
 
-$toggleButtonBorder:0px solid $primaryDarkerColor;
-$toggleButtonTextColor:#292929;
-$toggleButtonIconColor:#292929;
-
-$toggleButtonActiveBgColor:$primaryColor;
+$toggleButtonActiveBgColor:rgba(99, 174, 226, 0.1);
+$toggleButtonActiveHoverBgColor:rgba(99, 174, 226, 0.1);;
+$toggleButtonActiveFocusBgColor:rgba(99, 174, 226, 0.1);
 $toggleButtonActiveBorderColor:$primaryColor;
-$toggleButtonActiveTextColor:#292929;
-$toggleButtonActiveIconColor:#292929;
+$toggleButtonActiveTextColor:$primaryColor;
+$toggleButtonActiveIconColor:$primaryColor;
+$toggleButtonActiveHoverBorderColor:$primaryColor;
+$toggleButtonActiveHoverTextColor:$primaryColor;
+$toggleButtonActiveHoverIconColor:$primaryColor;
+$toggleButtonActiveFocusBorderColor:$primaryColor;
+$toggleButtonActiveFocusTextColor:$primaryColor;
+$toggleButtonActiveFocusIconColor:$primaryColor;
 
-$toggleButtonActiveHoverBorderColor:none;
-$toggleButtonActiveHoverTextColor:#292929;
-$toggleButtonActiveHoverIconColor:#292929;
 
-$toggleButtonActiveFocusBorderColor:none;
-$toggleButtonActiveFocusTextColor:#292929;
-$toggleButtonActiveFocusIconColor:#292929;
 
 $toggleButtonFocusOutline:0px solid rgb(209, 207, 207);
-$toggleButtonFocusBorderColor:none;
-$toggleButtonFocusTextColor:#292929;
-$toggleButtonFocusIconColor:#292929;
 
 
 
@@ -385,15 +386,16 @@ $panelFooterBgColor:$panelBgColor;
 $panelFooterTextColor:$panelHeaderTextColor;
 $panelFooterPadding:0.571em 1em;
 
-$panelHeaderHoverBgColor:$primaryColor;
+$panelHeaderHoverBgColor:$highlightBgColor;
 $panelHeaderHoverBorder:1px solid $primaryColor;
 $panelHeaderHoverTextColor:$panelHeaderTextColor;
 $panelHeaderHoverIconColor:$panelHeaderTextColor;
-$panelHeaderActiveBgColor:$primaryColor;
+$panelHeaderActiveBgColor:$highlightBgColor;//$primaryColor;
 $panelHeaderActiveBorder:1px solid $primaryColor;
 $panelHeaderActiveTextColor:$black;
 $panelHeaderActiveIconColor:$panelHeaderTextColor;
-$panelHeaderActiveHoverBgColor:$primaryColor;
+$panelHeaderActiveHoverBgColor:$highlightBgColor;
+
 $panelHeaderActiveHoverBorder:1px solid $primaryColor;
 $panelHeaderActiveHoverTextColor:$black;
 $panelHeaderActiveHoverIconColor:$black;
@@ -428,7 +430,8 @@ $paginatorElementHoverIconColor:$textColor;
 $paginatorElementBorderRadius:0;
 $paginatorElementMargin:0;
 $paginatorElementPadding:0;
-$paginatorElementBorder:0 none;
+$paginatorElementBorder:1px solid none;
+$paginatorElementActiveBorder: 1px solid $primaryColor;
 
 //table
 $tableCaptionFontWeight:700;

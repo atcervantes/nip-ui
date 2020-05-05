@@ -1156,7 +1156,8 @@ body {
         .ui-inputgroup {
             .ui-button {
                 width: auto;
-
+                padding: .108em;
+                
                 &.ui-button-icon-only {
                     width: $buttonIconOnlyWidth;
                 }

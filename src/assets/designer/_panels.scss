@@ -180,11 +180,41 @@ body {
                 padding: 0;
                 background: $tabsNavBgColor;
                 border: $tabsNavBorder;
-
+                
                 li {
                     border: $panelHeaderBorder;
                     background-color: $panelHeaderBgColor;
                     @include transition($panelHeaderTransition);
+                    
+                    &.flat {
+                        background-color:transparent;
+                        border: 1px solid transparent;
+                        
+                        &:not(.ui-state-active):not(.ui-state-disabled):hover {
+                            background-color: transparent;
+                            border: none;
+                            border-bottom: 2px solid $primaryColor;
+                        }
+                        &.ui-state-active {
+                            background-color: transparent;
+                            border: transparent;
+                            border-bottom: 2px solid $primaryColor;
+    
+                            a {
+                                color: $panelHeaderActiveTextColor;
+                            }
+    
+                            .ui-tabview-close {
+                                color: $panelHeaderActiveIconColor;
+                            }
+    
+                            &:hover {
+                                background-color: transparent;
+                                border: transparent;
+                                border-bottom: 2px solid $primaryColor
+                            }
+                        }
+                    }
 
                     a {
                         float: none;

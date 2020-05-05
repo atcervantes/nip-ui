@@ -386,7 +386,7 @@ $inputSwitchSliderOnFocusBgColor:$primaryColor;
 
 //panel common (e.g. accordion, panel, tabview)
 $panelHeaderBorder:none;
-$panelBgColor:rgba(68, 70, 79, 0.5);
+$panelBgColor:rgba(68, 70, 79);
 $panelHeaderBgColor:$panelBgColor;
 $panelHeaderTextColor:#949ba2;
 $panelHeaderIconColor:#848484;
@@ -446,6 +446,7 @@ $paginatorElementBorderRadius:0;
 $paginatorElementMargin:0;
 $paginatorElementPadding:0;
 $paginatorElementBorder:0 none;
+$paginatorElementActiveBorder: 1px solid none;
 
 //table
 $tableCaptionFontWeight:700;
@@ -535,7 +536,7 @@ $growlOpacity:.9;
 
 //overlays
 $overlayBgColor:rgba(68, 70, 79);
-$overlayContentBorderColor:$transparent;
+$overlayContentBorderColor:rgba(68, 70, 79);
 $overlayContentBorder:1px solid $overlayContentBorderColor;
 $overlayContainerShadow:0 0 6px 0 rgba(0, 0, 0, 0.16);
 
