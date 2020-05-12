@@ -89,6 +89,7 @@ import { TooltipModule } from 'primeng/tooltip';
 import { TreeModule } from 'primeng/tree';
 import { TreeTableModule } from 'primeng/treetable';
 import { VirtualScrollerModule } from 'primeng/virtualscroller';
+import {TriStateCheckboxModule} from 'primeng/tristatecheckbox';
 
 import { CarService } from './demo/service/carservice';
 import { CountryService } from './demo/service/countryservice';
@@ -185,7 +186,8 @@ import { SettingsComponent } from './demo/view/settings/settings.component';
         TooltipModule,
         TreeModule,
         TreeTableModule,
-        VirtualScrollerModule
+        VirtualScrollerModule,
+        TriStateCheckboxModule
     ],  
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },

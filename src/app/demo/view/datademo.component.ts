@@ -212,6 +212,13 @@ export class DataDemoComponent implements OnInit {
 
     responsiveOptions: any;
 
+    yearFilter: number; 
+
+    yearTimeout: any;
+
+    brands: SelectItem[];
+    colors: SelectItem[];
+
     constructor(private carService: CarService, private eventService: EventService, private nodeService: NodeService) {}
 
     ngOnInit() {
@@ -227,6 +234,31 @@ export class DataDemoComponent implements OnInit {
             { field: 'name', header: 'Name' },
             { field: 'size', header: 'Size' },
             { field: 'type', header: 'Type' }
+        ];
+
+        this.brands = [
+            { label: 'All Brands', value: null },
+            { label: 'Audi', value: 'Audi' },
+            { label: 'BMW', value: 'BMW' },
+            { label: 'Fiat', value: 'Fiat' },
+            { label: 'Honda', value: 'Honda' },
+            { label: 'Jaguar', value: 'Jaguar' },
+            { label: 'Mercedes', value: 'Mercedes' },
+            { label: 'Renault', value: 'Renault' },
+            { label: 'VW', value: 'VW' },
+            { label: 'Volvo', value: 'Volvo' }
+        ];
+
+        this.colors = [
+            { label: 'White', value: 'White' },
+            { label: 'Green', value: 'Green' },
+            { label: 'Silver', value: 'Silver' },
+            { label: 'Black', value: 'Black' },
+            { label: 'Red', value: 'Red' },
+            { label: 'Maroon', value: 'Maroon' },
+            { label: 'Brown', value: 'Brown' },
+            { label: 'Orange', value: 'Orange' },
+            { label: 'Blue', value: 'Blue' }
         ];
 
         this.carService.getCarsMedium().then(cars => this.cars2 = cars);
@@ -343,4 +375,15 @@ export class DataDemoComponent implements OnInit {
             this.sortField = value;
         }
     }
+
+    onYearChange(event, dt) {
+        if (this.yearTimeout) {
+            clearTimeout(this.yearTimeout);
+        }
+
+        this.yearTimeout = setTimeout(() => {
+            dt.filter(event.value, 'year', 'gt');
+        }, 250);
+    }
+
 }

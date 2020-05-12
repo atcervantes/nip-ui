@@ -11,6 +11,10 @@ export class SettingsComponent implements OnInit {
   billingInterval : any[];
 
   filteredCountries: any[];
+  
+  radioValues: string[];
+  
+  radioValue: string;
 
   country: any;
 

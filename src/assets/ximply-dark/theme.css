@@ -1899,6 +1899,9 @@ body .ui-accordion .ui-accordion-content {
 body .ui-tabview.ui-tabview-top, body .ui-tabview.ui-tabview-bottom, body .ui-tabview.ui-tabview-left, body .ui-tabview.ui-tabview-right {
   border: 0 none;
 }
+body .ui-tabview.ui-tabview-top.flat .ui-tabview-panels, body .ui-tabview.ui-tabview-bottom.flat .ui-tabview-panels, body .ui-tabview.ui-tabview-left.flat .ui-tabview-panels, body .ui-tabview.ui-tabview-right.flat .ui-tabview-panels {
+  border: 1px solid transparent;
+}
 body .ui-tabview.ui-tabview-top .ui-tabview-nav, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav, body .ui-tabview.ui-tabview-left .ui-tabview-nav, body .ui-tabview.ui-tabview-right .ui-tabview-nav {
   padding: 0;
   background: transparent;
@@ -1914,7 +1917,8 @@ body .ui-tabview.ui-tabview-top .ui-tabview-nav li, body .ui-tabview.ui-tabview-
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li.flat, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.flat, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.flat, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.flat {
   background-color: transparent;
-  border: 1px solid transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
 }
 body .ui-tabview.ui-tabview-top .ui-tabview-nav li.flat:not(.ui-state-active):not(.ui-state-disabled):hover, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.flat:not(.ui-state-active):not(.ui-state-disabled):hover, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.flat:not(.ui-state-active):not(.ui-state-disabled):hover, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.flat:not(.ui-state-active):not(.ui-state-disabled):hover {
   background-color: transparent;
@@ -3285,6 +3289,7 @@ body .ui-steps {
 body .ui-steps .ui-steps-item {
   background-color: transparent;
   text-align: center;
+  opacity: 1;
 }
 body .ui-steps .ui-steps-item .ui-menuitem-link {
   display: inline-block;
@@ -3316,6 +3321,7 @@ body .ui-steps .ui-steps-item .ui-menuitem-link .ui-steps-title {
 }
 body .ui-steps .ui-steps-item.ui-state-highlight .ui-steps-number {
   background: #f6a821;
+  border: 1px solid #f6a821;
   color: #ffffff;
 }
 body .ui-steps .ui-steps-item.ui-state-highlight .ui-steps-title {
@@ -3563,6 +3569,54 @@ body .ui-slidemenu .ui-menu-separator {
 }
 body .ui-tabmenu {
   border: 0 none;
+}
+body .ui-tabmenu.flat .ui-tabmenu-nav {
+  border: none;
+}
+body .ui-tabmenu.flat .ui-tabmenu-nav .ui-tabmenuitem {
+  position: static;
+  border: 0 none;
+  background-color: #44464f;
+  margin-right: 2px;
+  margin-bottom: -1px;
+  -moz-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+body .ui-tabmenu.flat .ui-tabmenu-nav .ui-tabmenuitem .ui-menuitem-link {
+  color: #949ba2;
+  padding: 0.571em 1em;
+}
+body .ui-tabmenu.flat .ui-tabmenu-nav .ui-tabmenuitem .ui-menuitem-link .ui-menuitem-text {
+  color: #949ba2;
+  margin-right: 0.5em;
+}
+body .ui-tabmenu.flat .ui-tabmenu-nav .ui-tabmenuitem .ui-menuitem-link .ui-menuitem-icon {
+  color: #848484;
+  margin-right: 0.5em;
+}
+body .ui-tabmenu.flat .ui-tabmenu-nav .ui-tabmenuitem:not(.ui-state-active):not(.ui-state-disabled):hover {
+  background-color: #fff;
+  border: 0 none;
+  border-bottom: 2px solid #f6a821;
+}
+body .ui-tabmenu.flat .ui-tabmenu-nav .ui-tabmenuitem:not(.ui-state-active):not(.ui-state-disabled):hover .ui-menuitem-link .ui-menuitem-text {
+  color: #ffffff;
+}
+body .ui-tabmenu.flat .ui-tabmenu-nav .ui-tabmenuitem:not(.ui-state-active):not(.ui-state-disabled):hover .ui-menuitem-link .ui-menuitem-icon {
+  color: #fff;
+}
+body .ui-tabmenu.flat .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active {
+  background-color: transparent;
+  border: 0 none;
+  border-bottom: 2px solid #f6a821;
+}
+body .ui-tabmenu.flat .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active .ui-menuitem-link .ui-menuitem-text {
+  color: #ffffff;
+}
+body .ui-tabmenu.flat .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active .ui-menuitem-link .ui-menuitem-icon {
+  color: #ffffff;
 }
 body .ui-tabmenu .ui-tabmenu-nav {
   padding: 0;

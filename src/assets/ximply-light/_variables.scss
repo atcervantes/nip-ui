@@ -17,13 +17,13 @@ $defaultBorderColor: #c8c8c8;
 $accent:    #dee4e9;
 $accentDark:  #849aad;
 $success:     #39b86d;
-$successDark: #296c26;
+$successDark: #164b14;
 $warning:     #f6ac2b;
-$warningDark: #dc8f09;
+$warningDark: #5c4d0c;
 $danger:      #e17576;
-$dangerDark:  #c92b2d;
+$dangerDark:  #610f10;
 $info:        #56c0e0;
-$infoDark:    #2298bc;
+$infoDark:    #135063;
 
 $lightGray: #949ba2;
 $complementaryColor:   #e29063;
@@ -42,8 +42,8 @@ $primaryTextColor:#333;
 //Global
 $fontFamily:"Roboto",sans-serif;
 $fontSize:14px;
-$textColor:#333;
-$textSecondaryColor:#333;
+$textColor:$primaryTextColor;
+$textSecondaryColor:$primaryTextColor;
 $borderRadius:2px;
 $transitionDuration:.2s;
 $primeIconFontSize:1.25em;
@@ -64,7 +64,8 @@ $linkActiveColor:$primaryDarkerColor;
 
 //highlight
 $highlightBgColor:rgba(99, 174, 226, 0.1);
-$highlightColorText:#333;
+$highlightBgSolidColor: #c7e2f5;
+$highlightColorText:$primaryTextColor;
 
 //input field (e.g. inputtext, spinner, inputmask)
 $inputPadding:0.429em;
@@ -133,19 +134,19 @@ $buttonIconOnlyPadding:0.429em;
 $buttonIconOnlyWidth:2.357em;
 $buttonBgColor:$transparent;
 $buttonBorder:1px solid #c8c8c8;
-$buttonTextColor:#333;
+$buttonTextColor:$primaryTextColor;
 
-$buttonHoverBgColor:rgba(99, 174, 226, 0.1);
-$buttonHoverTextColor:$primaryColor;
-$buttonHoverBorderColor:$primaryColor;
-$buttonActiveBgColor:rgba(99, 174, 226, 0.1);
-$buttonActiveTextColor:$primaryColor;
-$buttonActiveBorderColor:$primaryColor;
-$buttonFocusBorderColor:$primaryColor;
+$buttonHoverBgColor:rgba(174, 174, 174, 0.1);
+$buttonHoverTextColor:$primaryTextColor;
+$buttonHoverBorderColor:#c8c8c8;
+$buttonActiveBgColor:rgba(174, 174, 174, 0.1);
+$buttonActiveTextColor:$primaryTextColor;
+$buttonActiveBorderColor:#c8c8c8;
+$buttonFocusBorderColor:#c8c8c8;
 
 $buttonFocusOutline:0 none;
 $buttonFocusOutlineOffset:0px;
-$buttonFocusShadow:0 0 0 0.2em lighten($primaryColor, 35%);
+$buttonFocusShadow:0 0 0 0.2em lighten(#c8c8c8, 35%);
 $buttonTransition:background-color $transitionDuration,box-shadow $transitionDuration;
 $raisedButtonShadow:0 2px 3px 0 rgba(0, 0, 0, 0.15);
 $roundedButtonBorderRadius:50px;
@@ -234,7 +235,7 @@ $checkboxActiveFocusTextColor:$white;
 $checkboxActiveFocusBorderColor:$primaryDarkColor;
 
 $checkboxFocusBgColor:$white;
-$checkboxFocusTextColor:red;
+$checkboxFocusTextColor:$white;
 $checkboxFocusBorderColor:$primaryDarkColor;
 
 $checkboxFocusShadow: background-color 0.3s;
@@ -263,15 +264,15 @@ $radiobuttonTransition:background-color $transitionDuration, border-color $trans
 $toggleButtonBgColor:transparent;
 $toggleButtonBorder:1px solid #c8c8c8;
 $toggleButtonFocusBgColor:$transparent;
-$toggleButtonTextColor:#333333;
-$toggleButtonIconColor:#333333;
+$toggleButtonTextColor:$primaryTextColor;
+$toggleButtonIconColor:$primaryTextColor;
 $toggleButtonHoverBgColor:$transparent;
 $toggleButtonHoverBorderColor:1px solid #c8c8c8;
-$toggleButtonHoverTextColor:#333333;
-$toggleButtonHoverIconColor:#333333;
+$toggleButtonHoverTextColor:$primaryTextColor;
+$toggleButtonHoverIconColor:$primaryTextColor;
 $toggleButtonFocusBorderColor:1px solid #c8c8c8;
-$toggleButtonFocusTextColor:#333333;
-$toggleButtonFocusIconColor:#333333;
+$toggleButtonFocusTextColor:$primaryTextColor;
+$toggleButtonFocusIconColor:$primaryTextColor;
 
 
 $toggleButtonActiveBgColor:rgba(99, 174, 226, 0.1);
@@ -497,19 +498,19 @@ $toastMessageMargin:0 0 1em 0;
 $messageTextColor:#212121;
 $infoMessageBgColor:$info;
 $infoMessageBorder:0 none;
-$infoMessageTextColor:$messageTextColor;
+$infoMessageTextColor:$infoDark;
 $infoMessageIconColor:$infoDark;
 $successMessageBgColor:$success;
 $successMessageBorder:0 none;
-$successMessageTextColor:$messageTextColor;
+$successMessageTextColor:$successDark;
 $successMessageIconColor:$successDark;
 $warnMessageBgColor:$warning;
 $warnMessageBorder:0 none;
-$warnMessageTextColor:$messageTextColor;
+$warnMessageTextColor:$warningDark;
 $warnMessageIconColor:$warningDark;
 $errorMessageBgColor:$danger;
 $errorMessageBorder:0 none;
-$errorMessageTextColor:$messageTextColor;
+$errorMessageTextColor:$dangerDark;
 $errorMessageIconColor:$dangerDark;
 
 //growl
@@ -538,7 +539,7 @@ $overlayPanelCloseIconHoverBgColor:$primaryDarkerColor;
 $overlayPanelCloseIconHoverColor:#ffffff;
 
 //tooltip
-$tooltipBgColor:#333333;
+$tooltipBgColor:$primaryTextColor;
 $tooltipTextColor:#ffffff;
 $tooltipPadding:$inputPadding;
 
@@ -565,12 +566,12 @@ $menuitemPadding:0.714em 0.857em;
 $menuitemMargin:0;
 $menuitemTextColor:$textColor;
 $menuitemIconColor:$textColor;
-$menuitemHoverTextColor:$white;
-$menuitemHoverIconColor: $white;
-$menuitemHoverBgColor:$primaryColor;
+$menuitemHoverTextColor:$textColor;
+$menuitemHoverIconColor: $textColor;
+$menuitemHoverBgColor:$highlightBgColor;
 $menuitemActiveTextColor:$textColor;
 $menuitemActiveIconColor:$textColor;
-$menuitemActiveBgColor:$primaryColor;
+$menuitemActiveBgColor:$highlightBgColor;
 
 $submenuHeaderMargin: 0;
 $submenuPadding: 0;

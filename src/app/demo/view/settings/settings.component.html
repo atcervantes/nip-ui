@@ -1,3 +1,70 @@
+<div class="p-grid ">
+    <p-card class="p-col-12 " header="Components with no alignment">
+        <p-toggleButton ></p-toggleButton> 
+        <button pButton type="button" label="Save" class="ui-button-secondary"></button>                    
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="pi pi-shopping-cart"></i></span>
+            <span class="ui-inputgroup-addon"><i class="pi pi-star"></i></span>
+            <input type="text" placeholder="Price" pInputText>
+            <span class="ui-inputgroup-addon">$</span>
+            <span class="ui-inputgroup-addon">.00</span>
+        </div>
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="pi pi-user" style="line-height: 1.25;"></i></span>
+            <input type="text" pInputText placeholder="Username">         
+        </div>
+
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><p-checkbox></p-checkbox></span>
+            <input type="text" pInputText placeholder="Username">         
+        </div>
+        <div class="ui-inputgroup">
+            <input type="text" pInputText placeholder="Price">   
+            <span class="ui-inputgroup-addon"><p-radioButton></p-radioButton></span>      
+        </div>
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><p-checkbox></p-checkbox></span>
+            <input type="text" pInputText placeholder="Website">      
+            <span class="ui-inputgroup-addon"><p-radioButton></p-radioButton></span> 
+        </div>
+        <p-triStateCheckbox label="Item Label"></p-triStateCheckbox>
+    </p-card>
+</div>
+
+
+<div class="p-grid ui-fluid">
+    <p-card class="p-col-12 " header="Components with no alignment, fluid">
+        <p-toggleButton ></p-toggleButton> 
+        <button pButton type="button" label="Save" class="ui-button-secondary"></button>                    
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="pi pi-shopping-cart"></i></span>
+            <span class="ui-inputgroup-addon"><i class="pi pi-star"></i></span>
+            <input type="text" placeholder="Price" pInputText>
+            <span class="ui-inputgroup-addon">$</span>
+            <span class="ui-inputgroup-addon">.00</span>
+        </div>
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><i class="pi pi-user" style="line-height: 1.25;"></i></span>
+            <input type="text" pInputText placeholder="Username">         
+        </div>
+
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><p-checkbox></p-checkbox></span>
+            <input type="text" pInputText placeholder="Username">         
+        </div>
+        <div class="ui-inputgroup">
+            <input type="text" pInputText placeholder="Price">   
+            <span class="ui-inputgroup-addon"><p-radioButton></p-radioButton></span>      
+        </div>
+        <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon"><p-checkbox></p-checkbox></span>
+            <input type="text" pInputText placeholder="Website">      
+            <span class="ui-inputgroup-addon"><p-radioButton></p-radioButton></span> 
+        </div>
+        <p-triStateCheckbox label="Item Label"></p-triStateCheckbox>
+    </p-card>
+</div>
+
 <div class="p-grid ui-fluid">
     <div class="p-col-12">
         <p-card header="Settings" >
@@ -20,7 +87,7 @@
                         </div>
                         <div class="p-col-8" >
                             <span>Email Address</span>
-                            <input id="address" type="text" pInputText>
+                            <input id="email" type="text" pInputText>
                         </div>
                         <div class="p-col-4" ></div>
                         <div class="p-col-4" >
@@ -41,12 +108,18 @@
                 <div class="p-col-10">
                     <div class="p-grid" >
                         <div class="p-col-4" >
-                            <span>Plan</span>
-                            <input id="billing-plan" type="text" pInputText>
+                            <div class="p-grid p-dir-col" >
+                                <div class="p-col" ><span>Billing Plan</span></div>
+                                <div class="p-col"><input id="billing-plan" type="text" pInputText></div>
+                            </div>
                         </div>
                         <div class="p-col-4" >
-                            <span>Billing Interval</span>
-                            <p-dropdown id="billing-interval" ></p-dropdown>
+                            <div class="p-grid p-dir-col" >
+                                <div class="p-col" ><span>Billing Interval</span></div>
+                                <div class="p-col"><p-radioButton name="rg" value="Weekly" label="Weekly" [(ngModel)]="radioValue"></p-radioButton></div>
+                                <div class="p-col"><p-radioButton name="rg" value="Monthly" label="Montly" [(ngModel)]="radioValue"></p-radioButton></div>
+                                <div class="p-col"><p-radioButton name="rg" value="Anual" label="Anual" [(ngModel)]="radioValue"></p-radioButton></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -112,3 +185,4 @@
         </p-card> 
     </div>
 </div>
+
